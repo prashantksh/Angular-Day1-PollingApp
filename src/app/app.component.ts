@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'PollIt!';
   today = new Date();
+
+  handleEventFromChild($event) {
+    console.log('Event Handler at parent', $event);
+  }
 }

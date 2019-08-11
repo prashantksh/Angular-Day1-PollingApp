@@ -2,4 +2,9 @@
   <h2>Welcome to {{ title }}</h2>
   <hr />
   <p>It's {{ today }}</p>
+  <hr />
+  <app-poll
+    [displayStatus]="false"
+    (onPollSubmit)="handleEventFromChild($event)"
+  ></app-poll>
 </div>

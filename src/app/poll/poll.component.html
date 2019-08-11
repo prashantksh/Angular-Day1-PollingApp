@@ -1,1 +1,7 @@
-<p>poll works!</p>
+<p>Input property is set to {{ displayStatus }}</p>
+<button class="btn  btn-sm btn-primary" (click)="submitPoll()">Poll</button>
+
+<hr />
+
+<h2 [textContent]="inputElement.value"></h2>
+<input type="text" (keyup)="(0)" #inputElement />
