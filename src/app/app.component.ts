@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'polling-app';
+  title = 'PollIt!';
+  today = new Date();
 }
