@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem;">
+  <img
+    class="card-img-top"
+    src="{{ pollItem.imageUrl }}"
+    alt="Card image cap"
+    height="300"
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ pollItem.title }}</h5>
+    <ng-content></ng-content>
+    <p class="card-text">
+      {{ pollItem.description }}
+    </p>
+    <a href="#" class="btn btn-primary" (click)="clickHandler()">Select</a>
+  </div>
+</div>

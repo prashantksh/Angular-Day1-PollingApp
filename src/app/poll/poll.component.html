@@ -1,1 +1,12 @@
-<p>poll works!</p>
+<p>Hello Pollster! The current score is: {{ score }}</p>
+<ul>
+  <li *ngFor="let item of items; index as i">
+    For Item {{ i + 1 }}: {{ item.pollCount }}
+  </li>
+</ul>
+
+<div class="row">
+  <div class="col" *ngFor="let pi of items; index as i; first as f; even as ev">
+    <app-poll-item [pollItem]="pi"> </app-poll-item>
+  </div>
+</div>
